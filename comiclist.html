@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>SethMyers.com/comiclist</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: linear-gradient(lightblue, steelblue, #b4b4b4)">
+
+	<nav>
+	<ul>
+		<li><a href="./index.html">Home</a></li>
+		<li><a href="#">Professional</a>
+			<ul>
+				<li><a class='glogo' href='https://github.com/SethMyers' target='_blank'><span class='github'></span>GitHub</a></li>
+				<li><a class='linlogo' href="https://www.linkedin.com/in/seth-myers-292b26109/" target="_blank"><span class='linkedin'></span>LinkedIn</a></li>
+				<li><a class='rlogo' href="resume.pdf" target="_blank"><span class='resume'></span>Resume</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Personal</a>
+			<ul>
+				<li><a class='vlogo' href="./tetris.html"><span class='tetris'></span>Tetris</a></li>
+				<li><a class='rlogo' href="./comiclist.html"><span class='resume'></span>WIP</a></li>
+			</ul>
+		</li>
+	</ul>
+	</nav>
+	<hr>
+
+	<img id="comics" title="Comics" src="avatars/comics.jpg" class="avatar" />
+	<div>
+		<div id="comiclist" class="comics" style="display:none">
+			<p class="subhead" style="text-indent: 25px; color: red">Comics</p>
+			<img id="watchmen" class="subavatar" src="avatars/comics/watchmen.png"/>
+			<img id="straybullets" class="subavatar" src="avatars/comics/straybullets.jpg"/>
+			<br>
+			<img id="sandman" class="subavatar" src="avatars/comics/sandman.jpg"/>
+			<img id="bone" class="subavatar" src="avatars/comics/bone.jpg"/>
+		</div>
+	</div>
+
+	<img id="cartoons" title="Cartoons" src="avatars/cartoons.png" class="avatar"/>
+	
+	<div>
+		<div id="carlist" class="cartoons" style="display:none">
+				<p class="subhead" style="text-indent: 18px; color: magenta">Cartoons</p>
+				<img id="homer" class="subavatar" src="avatars/cartoons/homer.jpg"/>
+				<img id="bojack" class="subavatar" src="avatars/cartoons/bojack.jpg"/>
+				<br>
+				<img id="daffy" class="subavatar" src="avatars/cartoons/daffy.jpg"/>
+				<img id="southpark" class="subavatar" src="avatars/cartoons/southpark.png"/>
+				<br>
+				<img id="monarch" class="subavatar" src="avatars/cartoons/monarch.jpg"/>
+				<img id="dcau" class="subavatar" src="avatars/cartoons/dcau.png"/>
+		</div>
+	</div>
+
+	<img id="comedians" title="Comedians" src="avatars/comedians.jpg" class="avatar"/>
+	
+	<div>
+		<div id="comedylist" class="comedians" style="display:none">
+				<p class="subhead" style="text-indent: 10px; color: green">Comedians</p>
+				<img id="tem1" class="subavatar" src="vgame.png"/>
+				<img id="tem2" class="subavatar" src="vgame.png"/>
+		</div>
+	</div>
+
+	<div>
+		<p id="title" style="position:absolute; left: 150px; bottom: 510px; visibility: hidden">WATCHMEN</p>
+		<a id="wikilink" href="https://en.wikipedia.org/wiki/Watchmen" target="_blank" style="position:absolute; left: 150px; bottom: 500px; visibility: hidden;">Wikipedia</a>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="comiclist.js"></script>
+	
+
+
+</body>
+</html>

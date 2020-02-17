@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sethmyers.com/tetris</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: repeating-linear-gradient(lightblue, steelblue, #b4b4b4);">
+	<a class='vlogo' href="./index.html"><span class='tetris'></span>Home</a>
+	<hr>
+	<h2 style = "font-family:monaco; margin-left: 75px">TETRIS</h2>
+	<p id="game" class="game" style="color: red">GAME<br>OVER<br></p>
+	<p id="pause" class="game" style="color:white">GAME<br>PAUSED<br></p>
+	<p id="perm" style="color:white; width: 200px; height: 100px; font-size: 10px; top:517px; left:20px; position: absolute; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">(p) to pause, (r) to reset</p>
+	<button id="start">PLAY</button>
+	<canvas id="tetris" width="240" height="400"></canvas>
+	<div id="score" class="score" align="center"></div>
+	<script src="tetris.js"></script>
+
+
+</body>
+</html>

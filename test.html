@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+	$(document).ready(function(){
+  $('.avatar').click(function(){
+  	var sub = $(this).attr("id");
+    $('.'+sub).slideToggle("medium");
+  });
+});
+$('watchmen').each(function() {
+
+    var el = $(this);
+
+    // Make it static
+    el.css({
+        visibility: 'hidden', // Hide it so the position change isn't visible
+        position: 'static'
+    });
+
+    // Get the static position
+    var end = el.position();
+
+    // Turn it back to absolute
+    el.css({
+        visibility: 'visible', // Show it
+        position: 'absolute'
+    }).animate({ // Animate to the static position
+        top: end.top,
+        left: end.left
+    }, function() { // Make it static
+        $(this).css('position', 'static');
+    });
+});
+</script>
+<head>
+	<title>SethMyers.com/comiclist</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: linear-gradient(lightblue, steelblue, #b4b4b4)">
+
+	<nav>
+	<ul>
+		<li><a href="./index.html">Home</a></li>
+		<li><a href="#">Professional</a>
+			<ul>
+				<li><a class='glogo' href='https://github.com/SethMyers' target='_blank'><span class='github'></span>GitHub</a></li>
+				<li><a class='linlogo' href="https://www.linkedin.com/in/seth-myers-292b26109/" target="_blank"><span class='linkedin'></span>LinkedIn</a></li>
+				<li><a class='rlogo' href="resume.pdf" target="_blank"><span class='resume'></span>Resume</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Personal</a>
+			<ul>
+				<li><a class='vlogo' href="./tetris.html"><span class='tetris'></span>Tetris</a></li>
+				<li><a class='rlogo' href="./comiclist.html"><span class='resume'></span>WIP</a></li>
+			</ul>
+		</li>
+	</ul>
+	</nav>
+	<hr>
+
+	<img id="comics" title="Comics" src="avatars/comics.jpg" class="avatar" />
+	<div>
+		<div id="comiclist" class="comics" style="display:none">
+			<p>Comics</p>
+			<img id="watchmen" class="subavatar" src="avatars/comics/watchmen.png"/>
+			<img id="straybullets" class="subavatar" src="avatars/comics/straybullets.jpg"/>
+			<img id="sandman" class="subavatar" src="avatars/comics/sandman.jpg"/>
+			<br>
+			<img id="bone" class="subavatar" src="avatars/comics/bone.jpg"/>
+		</div>
+	</div>
+
+	<img id="cartoons" title="Cartoons" src="avatars/cartoons.png" class="avatar"/>
+	
+	<div>
+		<div id="carlist" class="cartoons" style="display:none">
+				<p>Cartoons</p>
+				<img id="homer" class="subavatar" src="avatars/cartoons/homer.jpg"/>
+				<img id="bojack" class="subavatar" src="avatars/cartoons/bojack.jpg"/>
+				<img id="daffy" class="subavatar" src="avatars/cartoons/daffy.jpg"/>
+				<br>
+				<img id="southpark" class="subavatar" src="avatars/cartoons/southpark.png"/>
+				<img id="monarch" class="subavatar" src="avatars/cartoons/monarch.jpg"/>
+				<img id="dcau" class="subavatar" src="avatars/cartoons/dcau.png"/>
+		</div>
+	</div>
+
+	<img id="comedians" title="Comedians" src="avatars/comedians.jpg" class="avatar"/>
+	
+	<div>
+		<div id="comedylist" class="comedians" style="display:none">
+				<p>Comedians</p>
+				<img id="tem1" class="subavatar" src="vgame.png"/>
+				<img id="tem2" class="subavatar" src="vgame.png"/>
+		</div>
+	</div>
+</html>
