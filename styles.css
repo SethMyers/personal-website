@@ -91,7 +91,7 @@ ul.list {
         }
 
 .github {
-	background: url('github_logo.png');
+	background: url('logos/github_logo.png');
 	padding-right: 33px;
 	padding-bottom: 12px;
 	background-size: 33px;
@@ -101,7 +101,7 @@ ul.list {
 }
 
 .linkedin {
-	background: url('linkedin_logo.png');
+	background: url('logos/linkedin_logo.png');
 	padding-right: 33px;
 	padding-bottom: 12px;
 	background-size: 30px;
@@ -111,7 +111,7 @@ ul.list {
 }
 
 .resume {
-	background: url('resume_logo.png');
+	background: url('logos/resume_logo.png');
 	padding-right: 30px;
 	padding-bottom: 9px;
 	background-size: 30px;
@@ -121,7 +121,7 @@ ul.list {
 }
 
 .tetris {
-	background: url('vgame.png');
+	background: url('logos/vgame.png');
 	padding-right: 32px;
 	background-size: 32px;
 	position: relative;
